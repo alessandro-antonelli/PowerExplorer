@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3edffb83-8987-42dc-8c82-33c21b4035e2</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Power Explorer</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback" />
+    <Reference Include="System.Drawing" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Global.vb" />
+    <Compile Include="Power_Explorer\My\MyApplication.vb" />
+    <Compile Include="Power_Explorer\My\MyComputer.vb" />
+    <Compile Include="Power_Explorer\My\MyProject.vb" />
+    <Compile Include="Power_Explorer\About.vb" />
+    <Compile Include="Power_Explorer\Compress.vb" />
+    <Compile Include="Power_Explorer\CopyForm.vb" />
+    <Compile Include="Power_Explorer\Delete.vb" />
+    <Compile Include="Power_Explorer\Favourites.vb" />
+    <Compile Include="Power_Explorer\History.vb" />
+    <Compile Include="Power_Explorer\IOSettings.vb" />
+    <Compile Include="Power_Explorer\Main.vb" />
+    <Compile Include="Power_Explorer\MultiFile.vb" />
+    <Compile Include="Power_Explorer\My\Resources\Resources.vb" />
+    <Compile Include="Power_Explorer\My\MySettings.vb" />
+    <Compile Include="Power_Explorer\NewFile.vb" />
+    <Compile Include="Power_Explorer\Proprietes.vb" />
+    <Compile Include="Power_Explorer\Rename.vb" />
+    <Compile Include="Power_Explorer\Settings.vb" />
+    <Compile Include="Power_Explorer\SplashScreen.vb" />
+    <Compile Include="Power_Explorer\Updates.vb" />
+    <EmbeddedResource Include="Power_Explorer.Rename.resources" />
+    <EmbeddedResource Include="Power_Explorer.Delete.resources" />
+    <EmbeddedResource Include="Power_Explorer.CopyForm.resources" />
+    <EmbeddedResource Include="Power_Explorer.Proprietes.resources" />
+    <EmbeddedResource Include="Power_Explorer.MultiFile.resources" />
+    <EmbeddedResource Include="Power_Explorer.Favourites.resources" />
+    <EmbeddedResource Include="Power_Explorer.Settings.resources" />
+    <EmbeddedResource Include="Power_Explorer.SplashScreen.resources" />
+    <EmbeddedResource Include="Power_Explorer.Main.resources" />
+    <EmbeddedResource Include="Power_Explorer.Resources.resources" />
+    <EmbeddedResource Include="Power_Explorer.History.resources" />
+    <EmbeddedResource Include="Power_Explorer.Compress.resources" />
+    <EmbeddedResource Include="Power_Explorer.Updates.resources" />
+    <EmbeddedResource Include="Power_Explorer.IOSettings.resources" />
+    <EmbeddedResource Include="Power_Explorer.NewFile.resources" />
+    <EmbeddedResource Include="Power_Explorer.About.resources" />
+  </ItemGroup>
+</Project>
